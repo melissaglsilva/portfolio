@@ -1,0 +1,107 @@
+.home {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.home::before {
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: '';
+    width: 100%;
+    height: 100vh;
+    background: url(../images/textura-fundo.png) right top/cover no-repeat;
+    z-index: -1;
+}
+
+/* .home::before {
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: '';
+    width: 100%;
+    height: 90vh;
+    opacity: 20%;
+    filter: url(#noiseFilter2);
+    z-index: -2;
+} */
+
+.home::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    background: linear-gradient(to bottom, transparent, var(--bg-color));
+    z-index: -1;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    align-items: center;
+}
+
+.header .logo{
+    color: var(--secondary-color);
+    font-size: 4rem;
+}
+
+.destaque {
+    font-family: var(--secondary-font);
+    text-transform: lowercase;
+}
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.header .menu{
+    display: flex;
+    gap: 20px;
+    animation: fade-up 3000ms;
+}
+
+.header .menu li a {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border-radius: 3px;
+    transition: 200ms ease-in-out;
+}
+
+.header .menu li a:hover{
+    background-color: rgb(246, 244, 241, 0.2);
+}
+
+.home-container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 60vh;
+}
+
+.home-container h2{
+    font-size: 3rem;
+    letter-spacing: 1px;
+}
+
+span {
+    /* font-size: 140%; */
+    font-size: 4rem;
+    word-spacing: -7px;
+}
+
+

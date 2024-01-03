@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+@font-face {
+    font-family: 'TaylorGothic';
+    src: url(/src/fonts/TaylorGothic.otf);
+}
+
+html{
+    font-size: 62.5%;
+    /* scroll-behavior: smooth; */
+}
+
+body{
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    background-color: var(--bg-color);
+}
+ 
+a {
+    color: var(--primary-color);
+}
