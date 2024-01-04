@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 @font-face {
     font-family: 'TaylorGothic';
-    src: url(/src/fonts/TaylorGothic.otf);
+    src: url(../fonts/TaylorGothic.otf);
+    size-adjust: 120%;
 }
 
 html{
@@ -17,6 +18,7 @@ body{
 
 .flex-row {
     display: flex;
+    flex-wrap: wrap;
 }
 
  
@@ -24,4 +26,8 @@ a {
     color: var(--primary-color);
 }
 
+
+button{
+    border-style: none;
+}
 

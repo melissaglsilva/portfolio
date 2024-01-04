@@ -28,13 +28,13 @@
 
 .header {
     justify-content: space-between;
-    padding: 40px;
+    padding: 40px 70px;
     align-items: center;
 }
 
 .header .logo {
     color: var(--secondary-color);
-    font-size: 4rem;
+    font-size: 3.4rem;
 }
 
 .highlight-text {
@@ -84,9 +84,41 @@
 }
 
 .home-container span {
-    font-size: 4rem;
+    font-size: 3.4rem;
     word-spacing: -7px;
 }
 
+.about-me {
+    padding: 150px 70px 0px;
+    justify-content: space-evenly;
+}
 
+.my-photo .blur {
+    height: 350px;
+    width: 350px;
+    background-color: #600001;
+    filter: blur(50px);
+    border-radius: 50%;
+    z-index: -1;
+    position: absolute;
+}
 
+.my-photo img {
+    border-radius: 5px;
+    max-width: 350px;
+}
+
+.about-me-info {
+    max-width: 350px;
+}
+
+.about-me h2 {
+    font-size: 4.4rem;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.about-me-info p {
+    font-size: 1.8rem;
+    text-align: justify;
+}
