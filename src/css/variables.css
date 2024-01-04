@@ -3,6 +3,7 @@
     --bg-color-opacity: rgba(246, 244, 241, 0.2);
     --primary-color: rgb(255, 255, 255);
     --secondary-color: rgb(255, 38, 38);
+    --highlight-color: rgb(96, 0, 1);
     --primary-font: 'PT Sans', sans-serif;
     --secondary-font: 'TaylorGothic', sans-serif;
 }

@@ -89,14 +89,14 @@
 }
 
 .about-me {
-    padding: 150px 70px 0px;
+    padding: 150px 0 0;
     justify-content: space-evenly;
 }
 
 .my-photo .blur {
     height: 350px;
     width: 350px;
-    background-color: #600001;
+    background-color: var(--highlight-color);
     filter: blur(50px);
     border-radius: 50%;
     z-index: -1;
@@ -109,7 +109,7 @@
 }
 
 .about-me-info {
-    max-width: 350px;
+    max-width: 400px;
 }
 
 .about-me h2 {
