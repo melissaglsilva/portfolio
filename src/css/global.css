@@ -14,7 +14,14 @@ body{
     font-family: var(--primary-font);
     background-color: var(--bg-color);
 }
+
+.flex-row {
+    display: flex;
+}
+
  
 a {
     color: var(--primary-color);
 }
+
+
