@@ -1,6 +1,6 @@
 .home {
     height: 100vh;
-    width: 100%;
+    /* width: 100%; */
     position: relative;
 }
 
@@ -11,7 +11,7 @@
     height: 100vh;
     right: 0;
     top: 0;
-    background: url(../images/textura-fundo.png) right top/cover no-repeat;
+    background: var(--secondary-bg-color) url(../images/textura-fundo.png) right top/cover no-repeat;
     z-index: -1;
 }
 
@@ -22,7 +22,7 @@
     height: 100vh;
     right: 0;
     top: 0;
-    background: linear-gradient(to bottom, transparent, var(--bg-color));
+    background: linear-gradient(to bottom, transparent, var(--primary-bg-color));
     z-index: -1;
 }
 
@@ -56,7 +56,7 @@
 
 .header .menu {
     gap: 20px;
-    animation: fade-up 3000ms;
+    animation: fade-up 2500ms;
 }
 
 .header .menu li a {
@@ -75,7 +75,7 @@
 .home-container {
     align-items: center;
     justify-content: center;
-    min-height: 60vh;
+    min-height: 50vh;
 }
 
 .home-container h2 {
@@ -83,20 +83,21 @@
     letter-spacing: 1px;
 }
 
-.home-container span {
+.home-container .my-name {
     font-size: 3.4rem;
     word-spacing: -7px;
 }
 
 .about-me {
-    padding: 150px 0 0;
+    padding: 60px 0;
     justify-content: space-evenly;
+    position: relative;
 }
 
 .my-photo .blur {
     height: 350px;
     width: 350px;
-    background-color: var(--highlight-color);
+    background-color: var(--dark-highlight-color);
     filter: blur(50px);
     border-radius: 50%;
     z-index: -1;
@@ -112,7 +113,7 @@
     max-width: 400px;
 }
 
-.about-me h2 {
+.about-me h3 {
     font-size: 4.4rem;
     padding-bottom: 10px;
     letter-spacing: 1px;
@@ -121,4 +122,132 @@
 .about-me-info p {
     font-size: 1.8rem;
     text-align: justify;
+}
+
+.about-me-info .emphasis-text{
+    color: var(--secondary-color);
+}
+
+.skills {
+    padding: 150px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.skills .blur-left {
+    height: 150px;
+    width: 250px;
+    background-color: var(--dark-highlight-color);
+    filter: blur(80px);
+    border-radius: 50%;
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    right: 96%;
+}
+
+.skills .blur-right {
+    height: 150px;
+    width: 250px;
+    background-color: var(--dark-highlight-color);
+    filter: blur(80px);
+    border-radius: 50%;
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 96%;
+}
+
+.skills-logos  {
+    gap: 50px;
+    margin: 50px;  
+}
+
+.skills h3 {
+    font-size: 4.4rem;
+    margin-bottom: 80px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.skills p{
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.skills img {
+    width: 65px;
+}
+
+.projects {
+    margin: 50px 0;
+}
+
+.projects h3 {
+    font-size: 4.4rem;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.project {
+    justify-content: center;
+    gap: 80px;
+    padding: 80px 0;
+}
+
+@keyframes fade-in {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.project-screenshot img {
+    border-radius: 5px;
+    animation: fade-in linear both;
+    animation-timeline: view(block);
+    animation-range: entry 8% cover 40%;
+}
+
+.project-info {
+    max-width: 400px;
+}
+
+.project-info h4 {
+    font-size: 2rem;
+    padding-bottom: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.project-info p {
+    font-size: 1.8rem;
+    text-align: justify;
+    padding-bottom: 10px;
+}
+
+.project-info .components {
+    gap: 15px;
+}
+
+.tool{
+    font-size: 1.2rem;
+    background-color: var(--bg-color-opacity);
+    border-radius: 3px;
+    padding: 3px 15px;
+    margin-bottom: 15px;
+}
+
+.button {
+    font-size: 1.6rem;
+    background-color:  var(--light-highlight-color);
+    border-radius: 50px;
+    color: var(--primary-color);
+    padding: 10px 40px;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px var(--dark-highlight-color);
+    transition: 200ms ease-in;
+}
+
+.button:hover {
+    transform: scale(110%);
 }

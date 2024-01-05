@@ -7,27 +7,33 @@
 
 html{
     font-size: 62.5%;
-    /* scroll-behavior: smooth; */
+    scroll-behavior: smooth;
 }
 
 body{
     color: var(--primary-color);
     font-family: var(--primary-font);
-    background-color: var(--bg-color);
+    background-color: var(--primary-bg-color);
 }
 
 .flex-row {
     display: flex;
     flex-wrap: wrap;
 }
-
  
 a {
     color: var(--primary-color);
 }
 
 
-button{
-    border-style: none;
+.horizontal-center{
+    justify-content: center;
 }
 
+.center-vertical{
+    align-items: center;
+}
+
+button{
+    border: none;
+}
