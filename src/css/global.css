@@ -38,15 +38,17 @@ button{
 }
 
 .emphasis-text{
-    text-shadow: 0px 0px 10px;
+    /* text-shadow: 0px 0px 10px; */
     color: var(--secondary-color);
 
 }
 
 ::selection{
     background-color: var(--light-highlight-color);
+    color: var(--primary-color);
 }
 
 ::-moz-selection{
     background-color: var(--light-highlight-color);
+    color: var(--primary-color);
 }
