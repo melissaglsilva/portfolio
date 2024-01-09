@@ -1,9 +1,9 @@
-.home {
+.hero {
     height: 100vh;
     position: relative;
 }
 
-.home::before {
+.hero::before {
     position: absolute;
     content: '';
     width: 100%;
@@ -14,7 +14,7 @@
     z-index: -1;
 }
 
-.home::after {
+.hero::after {
     position: absolute;
     content: '';
     width: 100%;
@@ -71,18 +71,18 @@
     background-color: var(--bg-color-opacity);
 }
 
-.home-container {
+.hero-container {
     align-items: center;
     justify-content: center;
     min-height: 50vh;
 }
 
-.home-container h2 {
+.hero-container h2 {
     font-size: 3rem;
     letter-spacing: 1px;
 }
 
-.home-container .my-name {
+.hero-container .my-name {
     font-size: 3.4rem;
     word-spacing: -7px;
 }
@@ -166,7 +166,7 @@
     text-align: center;
 }
 
-.skills p{
+.skills li{
     font-size: 1.8rem;
     text-align: center;
     margin-bottom: 10px;
