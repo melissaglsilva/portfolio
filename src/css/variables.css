@@ -8,4 +8,6 @@
     --light-highlight-color: rgb(194, 8, 8);
     --primary-font: 'PT Sans', sans-serif;
     --secondary-font: 'TaylorGothic', sans-serif;
+    --small-font: 1.8rem;
+    --big-font: 3.4rem;
 }

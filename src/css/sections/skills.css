@@ -1,0 +1,44 @@
+.skills {
+    padding: 150px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.skills .blur {
+    height: 150px;
+    width: 250px;
+    background-color: var(--dark-highlight-color);
+    filter: blur(80px);
+    border-radius: 50%;
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+}
+
+.skills .blur-left {
+    right: 96%;
+}
+
+.skills .blur-right {
+    left: 96%;
+}
+
+.skills-logos {
+    gap: 50px;
+    margin: 50px;
+}
+
+.skills h3 {
+    padding-bottom: 20px;
+}
+
+.skills li {
+    font-size: var(--small-font);
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.skills img {
+    width: 65px;
+}

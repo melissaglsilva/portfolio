@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio Desenvolvedora Front End</title>
 
-    <link rel="stylesheet" href="src/css/reset.css">
-    <link rel="stylesheet" href="src/css/variables.css">
-    <link rel="stylesheet" href="src/css/global.css">
-    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/variables.css">
+    <link rel="stylesheet" href="./src/css/global.css">
+    <link rel="stylesheet" href="./src/css/sections/hero.css">
+    <link rel="stylesheet" href="./src/css/sections/about-me.css">
+    <link rel="stylesheet" href="./src/css/sections/skills.css">
+    <link rel="stylesheet" href="./src/css/sections/projects.css">
+    <link rel="stylesheet" href="./src/css/sections/contact.css">
 
     <script src="https://kit.fontawesome.com/becda8fcd0.js" crossorigin="anonymous"></script>
 
@@ -31,56 +35,58 @@
             </nav>
         </header>
         <div class="hero-container flex-row">
-            <h2>Oi, eu sou <span class="highlight-text my-name">Melissa Silva</span> <br> Desenvolvedora Front End</h2>
+            <h2>Oi, eu sou <span class="highlight-text contrast-text">Melissa Silva</span> <br> Desenvolvedora Front End
+            </h2>
         </div>
     </section>
 
     <section class="about-me flex-row" id="about-me">
-        <div class="my-photo">
-            <div class="blur"></div>
+        <div class="container-photo">
+            <div class="blur-behind"></div>
             <img src="https://placehold.co/370x400" alt="foto da melissa">
         </div>
         <div class="about-me-info">
-            <h3 class="highlight-text">Sobre mim</h3>
-            <p>Me chamo Melissa, sou uma programadora em dedicação constante para evoluir no mundo do Front End. Minha jornada se iniciou pelo entusiasmo em encontrar maneiras criativas de resolver problemas. No momento, estou imersa no desenvolvimento das minhas habilidades em JavaScript, ansiosa por desafios que permitam expandir meu conhecimento.</p>
+            <h3 class="highlight-text section-title">Sobre mim</h3>
+            <p class="description">Me chamo Melissa, sou uma programadora em dedicação constante para evoluir no mundo
+                do Front End. Minha
+                jornada se iniciou pelo entusiasmo em encontrar maneiras criativas de resolver problemas. No momento,
+                estou imersa no desenvolvimento das minhas habilidades em JavaScript, ansiosa por desafios que permitam
+                expandir meu conhecimento.</p>
         </div>
     </section>
 
     <section class="skills" id="skills">
-        <div class="blur-left"></div>
-        <div class="blur-right"></div>
-        <div>
-            <h3 class="highlight-text">Habilidades</h3>
-        </div>
-        <div class="flex-row horizontal-center skills-logos">
+        <div class="blur blur-left"></div>
+        <div class="blur blur-right"></div>
+        <h3 class="highlight-text section-title">Habilidades</h3>
+        <div class="flex-row center-horizontal skills-logos">
             <ul>
                 <li>HTML5</li>
-                <li><img src="/src/images/html5_icon.png" alt="icone html"></li>
+                <li><img src="./src/images/html5_icon.png" alt="icone html"></li>
             </ul>
             <ul>
                 <li>CSS3</li>
-                <li><img src="/src/images/html5_icon.png" alt="icone html"></li>
+                <li><img src="./src/images/html5_icon.png" alt="icone html"></li>
             </ul>
         </div>
     </section>
 
     <main class="projects" id="projects">
-        <div>
-            <h3 class="highlight-text">Projetos</h3>
-        </div>
+        <h3 class="highlight-text section-title">Projetos</h3>
         <div class="project flex-row">
             <div class="project-screenshot">
                 <img src="https://placehold.co/480x270" alt="">
             </div>
             <div class="project-info">
                 <h4>Nome do Projeto</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore
                     et dolore magna aliqua sit amet consectetur adipisicing elit.</p>
-                <div class="flex-row components">
+                <div class="flex-row complements">
                     <div class="tool">HTML</div>
                     <div class="tool">CSS</div>
                 </div>
-                <div class="flex-row components">
+                <div class="flex-row complements">
                     <a href="#" target="_blank" class="button">Ver site <i class="fa-solid fa-expand"></i></a>
                     <a href="#" target="_blank" class="button">Ver código <i class="fa-brands fa-github"></i></a>
                 </div>
@@ -89,14 +95,15 @@
         <div class="project flex-row">
             <div class="project-info">
                 <h4>Nome do Projeto</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore
                     et dolore magna aliqua sit amet consectetur adipisicing elit.</p>
                 <div>
-                    <div class="flex-row components">
+                    <div class="flex-row complements">
                         <div class="tool">HTML</div>
                         <div class="tool">CSS</div>
                     </div>
-                    <div class="flex-row components">
+                    <div class="flex-row complements">
                         <a href="#" target="_blank" class="button">Ver site <i class="fa-solid fa-expand"></i></a>
                         <a href="#" target="_blank" class="button">Ver código <i class="fa-brands fa-github"></i></a>
                     </div>
@@ -109,21 +116,19 @@
     </main>
 
     <footer class="footer" id="contact">
-        <div>
-            <h3 class="highlight-text">Contato</h3>
+        <h3 class="highlight-text section-title">Contato</h3>
+        <div class="flex-row center-horizontal footer-info">
+            <a href="mailto:melissaglsilva@hotmail.com" target="_blank">
+                <i class="fa-solid fa-square-envelope"></i>
+                <p>E-mail</p>
+                <p>melissaglsilva@hotmail.com</p>
+            </a>
+            <a href="https://github.com/melissaglsilva" target="_blank">
+                <i class="fa-brands fa-square-github"></i>
+                <p>GitHub</p>
+                <p>@melissaglsilva</p>
+            </a>
         </div>
-        <div class="flex-row horizontal-center footer-info">
-        <a href="mailto:melissaglsilva@hotmail.com" target="_blank">
-            <i class="fa-solid fa-square-envelope"></i>
-            <p>E-mail</p>
-            <p>melissaglsilva@hotmail.com</p>
-        </a>
-        <a href="https://github.com/melissaglsilva" target="_blank">
-            <i class="fa-brands fa-square-github"></i>
-            <p>GitHub</p>
-            <p>@melissaglsilva</p>
-        </a>
-    </div>
 
     </footer>
 

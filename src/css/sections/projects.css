@@ -1,0 +1,64 @@
+.projects {
+    padding: 50px 0;
+}
+
+.project {
+    justify-content: center;
+    gap: 80px;
+    padding: 80px 0;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.project-screenshot img {
+    border-radius: 5px;
+    animation: fade-in linear both;
+    animation-timeline: view(block);
+    animation-range: entry 8% cover 40%;
+}
+
+.project-info {
+    max-width: 400px;
+}
+
+.project-info h4 {
+    font-size: 2rem;
+    padding-bottom: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.project-info .complements {
+    gap: 15px;
+}
+
+.tool {
+    font-size: 1.2rem;
+    background-color: var(--bg-color-opacity);
+    border-radius: 3px;
+    padding: 3px 15px;
+    margin-bottom: 15px;
+}
+
+.button {
+    font-size: 1.6rem;
+    background-color: var(--light-highlight-color);
+    border-radius: 50px;
+    color: var(--primary-color);
+    padding: 10px 40px;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px var(--dark-highlight-color);
+    transition: 200ms ease-in;
+}
+
+.button:hover {
+    transform: scale(110%);
+}

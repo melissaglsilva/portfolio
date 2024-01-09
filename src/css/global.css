@@ -1,48 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
 @font-face {
     font-family: 'TaylorGothic';
     src: url(../fonts/TaylorGothic.otf);
     size-adjust: 120%;
 }
 
-html{
+html {
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
 
-body{
+::selection {
+    background-color: var(--light-highlight-color);
+    color: var(--primary-color);
+}
+
+::-moz-selection {
+    background-color: var(--light-highlight-color);
+    color: var(--primary-color);
+}
+
+body {
     color: var(--primary-color);
     font-family: var(--primary-font);
     background-color: var(--primary-bg-color);
+}
+
+.hero::before,
+.footer::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background: var(--secondary-bg-color) url(../images/textura-fundo.png) right top/cover no-repeat;
+    z-index: -1;
 }
 
 .flex-row {
     display: flex;
     flex-wrap: wrap;
 }
- 
+
 a {
     color: var(--primary-color);
 }
 
-.horizontal-center{
+.highlight-text {
+    font-family: var(--secondary-font);
+    text-transform: lowercase;
+}
+
+.section-title {
+    font-size: 4.4rem;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.description {
+    font-size: var(--small-font);
+    text-align: justify;
+    padding-bottom: 10px;
+}
+
+.center-horizontal {
     justify-content: center;
 }
 
-.center-vertical{
+.center-vertical {
     align-items: center;
-}
-
-button{
-    border: none;
-}
-
-::selection{
-    background-color: var(--light-highlight-color);
-    color: var(--primary-color);
-}
-
-::-moz-selection{
-    background-color: var(--light-highlight-color);
-    color: var(--primary-color);
 }
