@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="./src/css/sections/skills.css">
     <link rel="stylesheet" href="./src/css/sections/projects.css">
     <link rel="stylesheet" href="./src/css/sections/contact.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
 
     <script src="https://kit.fontawesome.com/becda8fcd0.js" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
@@ -26,6 +26,12 @@
                 <h1>MS</h1>
             </a>
             <nav>
+                <input type="checkbox" id="menu-hamburguer">
+                <label for="menu-hamburguer">
+                    <div class="hamburguer">
+                        <span class="line"></span>
+                    </div>
+                </label>
                 <ul class="menu flex-row">
                     <li><a href="#about-me">Sobre mim</a></li>
                     <li><a href="#skills">Habilidades</a></li>
@@ -43,7 +49,7 @@
     <section class="about-me flex-row" id="about-me">
         <div class="container-photo">
             <div class="blur-behind"></div>
-            <img src="https://placehold.co/370x400" alt="foto da melissa">
+            <img src="https://placehold.co/380x400" alt="foto da melissa">
         </div>
         <div class="about-me-info">
             <h3 class="highlight-text section-title">Sobre mim</h3>
@@ -93,7 +99,7 @@
             </div>
         </div>
         <div class="project flex-row">
-            <div class="project-info">
+            <div class="project-info project-right">
                 <h4>Nome do Projeto</h4>
                 <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore
@@ -129,9 +135,7 @@
                 <p>@melissaglsilva</p>
             </a>
         </div>
-
     </footer>
-
 
 </body>
 

@@ -1,0 +1,101 @@
+@media(max-width: 1200px) {
+    .header {
+        display: block;
+    }
+
+    .header .menu {
+        animation: none;
+    }
+
+    .header .menu li a:hover {
+        background-color: initial;
+        scale: 110%;
+    }
+
+    .header .hamburguer {
+        display: block;
+    }
+
+    .header nav {
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        z-index: 1;
+    }
+
+    .header nav ul {
+        display: none;
+        background-color: var(--bg-color-opacity);
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    .header nav li a {
+        display: block;
+        text-align: center;
+    }
+
+    .header nav input:checked~ul {
+        display: block;
+    }
+}
+
+@media(max-width: 1026px) {
+    .project {
+        padding: 80px 50px 0px;
+    }
+
+    .project-info {
+        max-width: 480px;
+    }
+
+    .project-info h4 {
+        padding-top: 10px;
+    }
+
+    .project-right {
+        order: 1;
+    }
+}
+
+@media(max-width: 962px) {
+    .about-me {
+        padding: 80px 75px 60px;
+    }
+
+    .about-me h3 {
+        padding-top: 15px;
+    }
+
+    .about-me-info {
+        max-width: 365px;
+    }
+}
+
+@media(max-width:545px) {
+    .hero-container h2 {
+        padding-top: 80px;
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+    }
+
+    .hero-container .contrast-text {
+        font-size: 2.8rem;
+        word-spacing: -7px;
+    }
+
+    .container-photo img {
+        width: 100%;
+    }
+
+    .project-screenshot img {
+        width: 100%;
+    }
+}
+
+@media(max-width: 455px) {
+    .container-photo .blur-behind {
+        width: 80%;
+        height: 35%;
+        filter: blur(150px);
+    }

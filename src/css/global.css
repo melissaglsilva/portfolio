@@ -35,7 +35,8 @@ body {
     height: 100%;
     right: 0;
     top: 0;
-    background: var(--secondary-bg-color) url(../images/textura-fundo.png) right top/cover no-repeat;
+    background: var(--secondary-bg-color) url(../images/textura-fundo.png) center center;
+    background-size: cover;
     z-index: -1;
 }
 
@@ -61,7 +62,7 @@ a {
 
 .description {
     font-size: var(--small-font);
-    text-align: justify;
+    /* text-align: justify; */
     padding-bottom: 10px;
 }
 
