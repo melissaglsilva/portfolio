@@ -18,7 +18,7 @@
 
     .header nav {
         position: absolute;
-        top: 30px;
+        top: 40px;
         right: 20px;
         z-index: 1;
     }
@@ -99,3 +99,8 @@
         height: 35%;
         filter: blur(150px);
     }
+
+    body{
+        overflow-x: hidden;
+    }
+}
