@@ -4,6 +4,7 @@
     font-family: 'TaylorGothic';
     src: url(../fonts/TaylorGothic.otf);
     size-adjust: 120%;
+    font-display: swap;
 }
 
 html {
@@ -62,7 +63,6 @@ a {
 
 .description {
     font-size: var(--small-font);
-    /* text-align: justify; */
     padding-bottom: 10px;
 }
 
